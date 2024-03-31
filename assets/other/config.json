@@ -1,0 +1,78 @@
+{
+    "dns": {
+		"servers": [
+            "172.17.0.1"
+        ],
+        "tag": "dns"
+    },
+    "inbounds": [
+        {
+            "port": 10808,
+            "protocol": "socks",
+            "tag": "socks-in"
+        },
+        {
+            "port": 10809,
+            "protocol": "http",
+            "tag": "http-in"
+        }
+    ],
+    "log": {
+        "dnsLog": false,
+        "loglevel": "warning"
+    },
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {
+                "domainStrategy": "UseIP"
+            },
+            "tag": "direct"
+        },
+        {
+            "protocol": "freedom",
+            "settings": {
+                "network": "tcp",
+                "security": "",
+                "fragment": {
+                    "interval": "10-20",
+                    "length": "10-20",
+                    "packets": "tlshello"
+                }
+            },
+            "streamSettings": {
+                "sockopt": {
+                    "domainStrategy": "UseIP",
+                    "tcpKeepAliveIdle": 100,
+                    "tcpNoDelay": true
+                }
+            },
+            "tag": "fragment"
+        },
+        {
+            "protocol": "blackhole",
+            "settings": {
+                "response": {
+                    "type": "http"
+                }
+            },
+            "tag": "block"
+        },
+        {
+            "protocol": "dns",
+            "tag": "dns-out"
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "inboundTag": [
+                    "socks-in",
+                    "http-in"
+                ],
+                "outboundTag": "fragment",
+                "type": "field"
+            }
+        ]
+    }
+}
