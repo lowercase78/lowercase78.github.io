@@ -1,6 +1,6 @@
 ---
 layout: search
-title: Search
+title: جستجو
 permalink: /search/
 subtitle: "What are you looking for?"
 feature-img: "assets/img/pexels/search-map.jpeg"

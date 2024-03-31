@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Categories
+title: دسته‌بندی مطالب
 permalink: /categories/
 excluded: true
 ---
