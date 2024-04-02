@@ -3,7 +3,7 @@ layout: page
 ---
 
 <!-- Html Elements for Search -->
-<input type="text" id="search-input" placeholder="Enter keywords..." class="search-bar" autofocus>
+<input type="text" id="search-input" placeholder="کلیدواژه را وارد کنید..." class="search-bar" autofocus>
 <br>
 <br>
 <ul id="results-container"></ul>
@@ -15,7 +15,7 @@ layout: page
             resultsContainer: document.getElementById('results-container'),
             json: '{{ "/assets/data/search.liquid" | relative_url }}',
             searchResultTemplate: '<div class="search-title"><a href="{url}"><h3> {title}</h3></a><div class="meta">{date} <div class="right"><i class="fas fa-tag"></i> {tags}</div></div><p>{excerpt}</p></div><hr> ',
-            noResultsText: '{{ site.data.language.str_no_result_found | default: "No result found" }}',
+            noResultsText: '{{ site.data.language.str_no_result_found | default: "محتوایی پیدا نشد" }}',
             limit: 10,
             fuzzy: false,
             exclude: []

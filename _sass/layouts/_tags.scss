@@ -54,6 +54,9 @@
     .post-info {
       float: right;
     }
+    i {
+      margin-right: $title-padding;
+    }
   }
 
   .meta {

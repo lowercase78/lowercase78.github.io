@@ -13,7 +13,7 @@ header_text: اینترنت برای همه یا هیچکس  # Change Blog heade
 header_feature_image: assets/img/header/internet.jpeg
 header_feature_image_responsive: true
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  قدرت گرفته از <a href="https://jekyllrb.com/">Jekyll</a> به همراه <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
   <p> به یاد کیان پیرفلک دانشمند کوچک </p>
 
 # Blog
