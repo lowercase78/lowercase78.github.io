@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: برچسب‌ها
+title: تگ ها
 permalink: /tags/
 icon: "fa-tags"
 position: 5

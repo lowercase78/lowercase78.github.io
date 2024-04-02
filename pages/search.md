@@ -2,7 +2,7 @@
 layout: search
 title: جستجو
 permalink: /search/
-subtitle: "What are you looking for?"
+subtitle: "دنبال چه چیزی میگردید؟"
 feature-img: "assets/img/pexels/search-map.jpeg"
 icon: "fa-search"
 excluded: true

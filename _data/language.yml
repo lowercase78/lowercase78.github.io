@@ -1,22 +1,22 @@
 # Localization strings
-str_follow_on: "Follow on"
-str_rss_follow: "Follow RSS feed"
-str_share_on: "Share on"
-str_add_to: "Add to"
-str_email: "Email"
-str_tweet: "Tweet"
-str_pin_it: "Pin it"
-str_next_post: "Next post"
-str_previous_post: "Previous post"
-str_next_page: "Next"
-str_previous_page: "Prev"
-str_javascript_required_disqus: "Please enable JavaScript to view comments."
-str_no_result_found: "No result found"
-str_cookie_approve: "Approve"
-str_cookie_disclaimer: "We would like to use third party cookies and scripts to improve the functionality of this website."
-str_months: [January, February, March, April, May, June, July, August, September, October, November, December]
-str_dark: 'Dark'
-str_light: 'Light'
+str_follow_on: "دنبال کردن در"
+str_rss_follow: "دنبال کردن RSS feed"
+str_share_on: "اشتراک گذاری در"
+str_add_to: "افزودن به"
+str_email: "ایمیل"
+str_tweet: "توییت"
+str_pin_it: "پین کنید"
+str_next_post: "پست بعدی"
+str_previous_post: "پست قبلی"
+str_next_page: "بعدی"
+str_previous_page: "قبلی"
+str_javascript_required_disqus: "لطفا جاوا اسکریپت خود را برای دیدن کامنت ها روشن کنید"
+str_no_result_found: "محتوایی پیدا نشد"
+str_cookie_approve: "قبول"
+str_cookie_disclaimer: "ما می خواهیم از کوکی ها و اسکریپت های شخص ثالث برای بهبود عملکرد این وب سایت استفاده کنیم"
+str_months: [دی, بهمن, اسفند, فروردین, اردیبهشت, خرداد, تیر, مرداد, شهریور, مهر, آبان, آذر]
+str_dark: 'تاریک'
+str_light: 'روشن'
 str_date_format: '%B %-d, %Y'
 
 # Localization settings
