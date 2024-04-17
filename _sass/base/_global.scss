@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ html {
 
 body {
   color: var(--text);
-  font-family: $font-family-main;
+  font-family: $font-family-main !important;
   font-size: $font-size;
   word-wrap: break-word;
 }
@@ -89,16 +91,25 @@ summary {
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.5em;
   }
+
   h3 {
     font-size: 1em;
   }
-  h4, tr, th, .meta {
+
+  h4,
+  tr,
+  th,
+  .meta {
     font-size: 0.9em;
   }
-  p, li, td {
+
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
 
@@ -116,21 +127,32 @@ summary {
   h1 {
     font-size: 1.5em;
   }
+
   h2 {
     font-size: 1em;
   }
+
   h3 {
     font-size: 0.9em;
   }
-  h4, th, tr, .meta {
+
+  h4,
+  th,
+  tr,
+  .meta {
     font-size: 0.85em;
   }
-  p, li, td {
+
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
+
   li li {
     font-size: 0.95em;
   }
+
   li li * {
     font-size: 1em;
   }
@@ -199,8 +221,8 @@ li {
     display: inline;
   }
 
-  & > ul,
-  & > ol {
+  &>ul,
+  &>ol {
     margin-bottom: 0;
     margin-left: 1em;
   }
@@ -239,12 +261,12 @@ kbd {
 }
 
 details {
-  & > summary {
+  &>summary {
     cursor: pointer;
     display: list-item;
   }
 
-  &[open] > summary {
+  &[open]>summary {
     color: var(--link);
   }
 }
@@ -269,11 +291,12 @@ details {
 }
 
 // Mermaid
-.mermaid, .language-mermaid {
+.mermaid,
+.language-mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
 
-  & > svg {
+  &>svg {
     margin: auto;
     display: block;
     height: auto;
@@ -282,4 +305,3 @@ details {
     max-width: 100%;
   }
 }
-

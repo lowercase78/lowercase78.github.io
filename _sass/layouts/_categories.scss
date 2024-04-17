@@ -1,5 +1,6 @@
 #archive,
 #categories {
+
   .archive-clouds,
   .category-clouds {
     margin: 30px 0 30px;
@@ -79,7 +80,8 @@
       .category-post-link:hover {
         text-decoration: none;
 
-        .meta, .title {
+        .meta,
+        .title {
           color: var(--header-background);
         }
 
@@ -88,10 +90,23 @@
         }
       }
     }
+
+    .items {
+      .category-post-link {
+        .item:hover {
+
+          .title,
+          .meta {
+            color: var(--link);
+          }
+        }
+      }
+    }
   }
 }
-.highlight{
-  pre{
+
+.highlight {
+  pre {
     text-align: end;
   }
 }
