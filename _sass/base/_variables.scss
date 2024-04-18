@@ -1,10 +1,19 @@
+$vazirmatn-font-path: "../../assets/fonts/vazirmatn" !default;
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: local("Vazirmatn"),
+  url('#{$vazirmatn-font-path}/Vazirmatn-Regular.ttf') format("ttf");
+}
+
 /* TYPOGRAPHY */
-$font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-headings: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-logo: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-main: 'Vazirmatn';
+$font-family-headings: 'Vazirmatn';
+$font-family-logo: 'Vazirmatn';
 $font-size: 1.25em;
 
-$monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif !default;
+// $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif !default;
+$monospace: 'Vazirmatn';
 $font-size-code: 0.85em !default;
 $font-height-code: 1.3em !default;
 $border-radius: 4px !default;
@@ -76,7 +85,8 @@ html[data-theme="dark"] {
 
 /* BASE16 CODE HIGHLIGHT */
 // Material Theme
-html, html[data-theme="light"] {
+html,
+html[data-theme="light"] {
   --base00: #302f2d; // Default Background
   --base01: #2e3c43; // Lighter Background (Used for status bars) - NOT USED
   --base02: #314549; // Selection Background
